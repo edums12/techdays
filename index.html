@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tech Days</title>
+
+    <link rel="stylesheet" href="assets/bootstrap-4.0.0-beta-dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link href="assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Tech Days <span class="secondary">.</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu_header" aria-controls="menu_header"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="menu_header">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#carousel_destaque" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#palestras" redirect="" class="nav-link">Palestras</a></li>
+                    <li class="nav-item"><a href="#oficinas" class="nav-link">Oficinas</a></li>
+                    <li class="nav-item"><a href="#programacao" class="nav-link">Programação</a></li>
+                    <li class="nav-item">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSduqi5NU0gzysf7QAruzxIyWzbGj5GtoND6FNyUuOTegE2E9w/viewform?usp=sf_link" target="_blank" class="btn btn-info">
+                            Inscreva-se
+                        </a>
+                        <a href="#" class="btn btn-info" data-toggle="modal" data-target="#contato-modal">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="contato-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contato</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Ramon Lummertz: </td>
+                                <td>ramon.lummertz@ulbra.inf.br</td>
+                            </tr>
+                            <tr>
+                                <td>Adriana Bueno: </td>
+                                <td>adriana.bueno@ulbra.inf.br</td>
+                            </tr>
+                            <tr>
+                                <td>Computação Ulbra Torres: </td>
+                                <td>computacao.torres@ulbra.br</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carrousel -->
+
+    <div id="carousel_destaque" class="carousel carousel-responsive slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel_destaque" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel_destaque" data-slide-to="1"></li>
+            <li data-target="#carousel_destaque" data-slide-to="2"></li>
+            <li data-target="#carousel_destaque" data-slide-to="3"></li>
+            <li data-target="#carousel_destaque" data-slide-to="4"></li>
+            <li data-target="#carousel_destaque" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="content align-items-center justify-content-center">
+                    <div class="container">
+                        <div class="dados_evento">
+                            <div class="row justify-content-md-center">
+                                <h1>Tech Days Apresenta:</h1>
+                            </div>
+                            <div class="row justify-content-md-center">
+                                <h2>Nos Dias 16, 17 e 18 de outubro</h2>
+                            </div>
+                            <div class="row align-items-center margin-top justify-content-md-center">
+                                <h3><i class="fa fa-map-marker"></i> Centro de Eventos Ulbra Torres</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="content align-items-center justify-content-center">
+                    <div class="container">
+                        <div class="dados_evento text-center">
+                            <div class="row justify-content-md-center">
+                                <h3>Alunos do ensino médio são convidados a participar como visitante em uma programação especial</h3>
+                            </div>
+                            <div class="row align-items-center margin-top justify-content-md-center">
+                                <div class="col-12">
+                                    <p><h4>Mais Informações:</h4></p>
+                                    <p><h4><i class="fa fa-whatsapp"></i>(51)9 81636027</h4></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="content align-items-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <h1>Palestras com:</h1>
+                        </div>
+                        <div class="row justify-content-center">
+                            <h1 class="destaque">Evelyn Mendes</h1>
+                        </div>
+                        <div class="row justify-content-center">
+                            <h3>Diversidade na TI: Um bate papo sobre pessoas</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="content align-items-center">
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <h1>Palestras com:</h1>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <h1 class="destaque">Filipe Nunes</h1>
+                        </div>
+                        <div class="row margin-top justify-content-md-center">
+                            <h3>Desenvolvimento Android e seu mercado.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="content align-items-center">
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <h1>Palestras com:</h1>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <h1 class="destaque">Giovanni Comunello Jr.</h1>
+                        </div>
+                        <div class="row margin-top justify-content-md-center">
+                            <h3>IOT e o Mercado de Trabalho</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="content align-items-center">
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <h1>Palestras com:</h1>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <h1 class="destaque">Matheus Becker</h1>
+                        </div>
+                        <div class="row margin-top justify-content-md-center">
+                            <h3>Uma história de um desenvolvedor IOS</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#carousel_destaque" class="carousel-control-prev" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+
+        <a href="#carousel_destaque" class="carousel-control-next" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="break-point" id="palestras"></div>
+    <!-- Break Point -->
+
+    <div class="container-fluid palestras">
+        <h1 class="title">Palestras</h1>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card border-none text-center">
+                    <div class="perfil">
+                        <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <pattern id="img1" patternUnits="userSpaceOnUse" width="100" height="100">
+                                    <image xlink:href="assets/img/profiles/Evelym Mendes.png" x="-25" width="150" height="100" />
+                                </pattern>
+                            </defs>
+                            <polygon id="hex" points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img1)" />
+                        </svg>
+                    </div>
+                    <span class="autor_palestra">Evelyn Mendes</span>
+                    <div class="card-body">
+                        <h5 class="card-title">Diversidade na TI: Um bate papo sobre pessoas</h5>
+                        <p class="card-text">Mulher transexual, trabalho a 15 na área de TI, amo tecnologia, muito nerd e geek, mãe e avó de 3
+                            lindos shih tzus e apesar de tudo isso dizem que sou uma pessoa legal.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3">
+                <div class="card border-none text-center">
+                    <div class="perfil">
+                        <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <pattern id="img2" patternUnits="userSpaceOnUse" width="100" height="100">
+                                    <image xlink:href="assets/img/profiles/Giovanni Comunello Jr..png" x="-25" width="150" height="100" />
+                                </pattern>
+                            </defs>
+                            <polygon id="hex" points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img2)" />
+                        </svg>
+                    </div>
+                    <span class="autor_palestra">Giovanni Comunello Jr.</span>
+                    <div class="card-body">
+                        <h5 class="card-title">IOT e o Mercado de Trabalho</h5>
+                        <p class="card-text">Ceo e Founder da iTinvent Formado em Ciência da Computação 20 anos de experiência em desenvolvimento
+                            de sistemas. Há quase três anos vem aplicando sua experiência em TI, Eletrônica Digital, Mecânica
+                            e Prototipação.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3">
+                <div class="card border-none text-center">
+                    <div class="perfil">
+                        <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <pattern id="img3" patternUnits="userSpaceOnUse" width="100" height="100">
+                                    <image xlink:href="assets/img/profiles/Felipe Nunes.png" x="-25" width="150" height="100" />
+                                </pattern>
+                            </defs>
+                            <polygon id="hex" points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img3)" />
+                        </svg>
+                    </div>
+                    <span class="autor_palestra">Filipe Nunes</span>
+                    <div class="card-body">
+                        <h5 class="card-title">Desenvolvimento Android e seu mercado</h5>
+                        <p class="card-text">Desenvolvedor desde os 13 anos, trabalho com Java há mais de 6 anos e há 3 anos com Mobile. Estudante
+                            de Analise e desenvolvimento de Sistemas na Uniritter. Ratinho de eventos e meetups.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card border-none text-center">
+                    <div class="perfil">
+                        <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <pattern id="img4" patternUnits="userSpaceOnUse" width="100" height="100">
+                                    <image xlink:href="assets/img/profiles/Matheus Becker.png" x="-25" width="150" height="100" />
+                                </pattern>
+                            </defs>
+                            <polygon id="hex" points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img4)" />
+                        </svg>
+                    </div>
+                    <span class="autor_palestra">Matheus Becker</span>
+                    <div class="card-body">
+                        <h5 class="card-title">Uma história de um desenvolvedor IOS</h5>
+                        <p class="card-text">Formado em Análise e Desenvolvimento de Sistemas na Universidade Luterana do Brasil, iOS Developer pelo Brazilian Education Program for iOS Development, criador do aplicativo Rodeiando e principalmente entusiasta de novas tecnologias.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid dias">
+        <div class="content align-items-center justify-content-center">
+            <h1></h1>
+        </div>
+    </div>
+
+    <div class="break-point" id="oficinas"></div>
+    <!-- Break Point -->
+
+    <div class="container-fluid oficinas">
+        <h1 class="title">Oficinas</h1>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card text-center">
+                    <div class="perfil">
+                        <img src="assets/img/icons/android.png" alt="Oficina Android" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Android</h5>
+                        <p class="card-text">
+                            Android é um sistema operacional (SO), mais usado no Brasil, baseado no núcleo Linux e atualmente desenvolvido pela empresa
+                            de tecnologia Google.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="code">Heitor Gianastasio</div>
+                        <div class="code">Carga Horária: 4 horas</div>
+                        <div class="code">Valor: R$30,00</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4">
+                <div class="card text-center">
+                    <div class="perfil">
+                        <img src="assets/img/icons/iot.png" alt="Oficina IOT" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">IOT</h5>
+                        <p class="card-text">
+                            A Internet das Coisas (do inglês, Internet of Things) é uma revolução tecnológica a fim de conectar dispositivos eletrônicos
+                            utilizados no dia-a-dia na Internet.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="code">Giovanni Comunello</div>
+                        <div class="code">Carga Horária: 4 horas</div>
+                        <div class="code">Valor: R$50,00</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4">
+                <div class="card text-center">
+                    <div class="perfil">
+                        <img src="assets/img/icons/css.png" alt="Oficina CSS" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">CSS avançado</h5>
+                        <p class="card-text">
+                            O CSS3 agora permite coisas antes impossíveis como elementos com cor ou fundo gradiente, sombras, cantos arredondados e outras
+                            novidades.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="code">Eduardo Marques</div>
+                        <div class="code">Carga Horária: 4 horas</div>
+                        <div class="code">Valor: R$30,00</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card text-center">
+                    <div class="perfil">
+                        <img src="assets/img/icons/node.png" alt="Oficina Node JS" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Node JS</h5>
+                        <p class="card-text">
+                            Node.js é uma plataforma construída sobre o motor JavaScript do Google Chrome para facilmente construir aplicações de rede
+                            rápidas e escaláveis.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="code">Cainã da Rosa</div>
+                        <div class="code">Carga Horária: 4 horas</div>
+                        <div class="code">Valor: R$30,00</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card text-center">
+                    <div class="perfil">
+                        <img src="assets/img/icons/AngularJS-Shield.svg" alt="Oficina Angular JS" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Angular JS</h5>
+                        <p class="card-text">
+                            AngularJS é um framework JavaScript open-source, mantido pelo Google, que auxilia na execução de single-page applications. 
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="code">Raphael Kieling</div>
+                        <div class="code">Carga Horária: 4 horas</div>
+                        <div class="code">Valor: R$30,00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="break-point" id="programacao"></div>
+    <!-- Break Point -->
+
+    <div id="timeline">
+        <div class="container">
+            <h1 class="title">Programação</h1>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="line-event">
+                        <div class="day">Dia 16 - Segunda-Feira</div>
+
+                        <div class="event no-hour">
+                            <span class="point"><i class="fa fa-map"></i></span>
+                            <div class="description">
+                                <p class="title">Apresentação de banner de projetos de desenvolvimento de software</p>
+                            </div>
+                        </div>
+
+                        <div class="event">
+                            <span class="point"><i class="fa fa-laptop"></i></span>
+                            <div class="description">
+                                <p class="hour">14:00 - 18:00</p>
+                                <p class="title">Oficina de CSS - R$30,00</p>
+                            </div>
+                        </div>
+
+                        <div class="event">
+                            <span class="point"><i class="fa fa-laptop"></i></span>
+                            <div class="description">
+                                <p class="hour">14:00 - 18:00</p>
+                                <p class="title">Oficina de Android - R$30,00</p>
+                            </div>
+                        </div>
+
+                        <div class="event">
+                            <span class="point"><i class="fa fa-address-card"></i></span>
+                            <div class="description">
+                                <p class="hour">19:00</p>
+                                <p class="title">Credenciamento</p>
+                            </div>
+                        </div>
+
+                        <div class="event">
+                            <span class="point"><i class="fa fa-user"></i></span>
+                            <div class="description">
+                                <p class="hour">19:30</p>
+                                <p class="title">Palestra: Filipe Nunes</p>
+                            </div>
+                        </div>
+
+                        <div class="event">
+                            <span class="point"><i class="fa fa-user"></i></span>
+                            <div class="description">
+                                <p class="hour">20:30</p>
+                                <p class="title">Palestra: Matheus Becker</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="line-event">
+                        <div class="day">Dia 17 - Terça-Feira</div>
+
+                        <div class="event no-hour">
+                            <span class="point"><i class="fa fa-map"></i></span>
+                            <div class="description">
+                                <p class="title">Apresentação de banners de projetos de desenvolvimento de software</p>
+                            </div>
+                        </div>
+
+                        <div class="event destaque">
+                            <span class="point"><i class="fa fa-leanpub"></i></span>
+                            <div class="description">
+                                <p class="hour">14:00</p>
+                                <p class="title">Palestra sobre futuro das profissões</p>
+                                <p class="title destaque">Voltada para o ensino médio</p>
+                            </div>
+                        </div>
+
+                        <div class="event destaque">
+                            <span class="point"><i class="fa fa-leanpub"></i></span>
+                            <div class="description">
+                                <p class="hour">15:00</p>
+                                <p class="title">Workshop de robótica</p>
+                                <p class="title destaque">Voltada para o ensino médio</p>
+                                <p class="title destaque">Startup LLama</p>
+                                <p class="title destaque">- Alessandra da Luz</p>
+                                <p class="title destaque">- Guilherme Callegari</p>
+                                <p class="title destaque">- Leonardo Pinheiro</p>
+                                <p class="title destaque">- Rafael Vargas</p>
+                            </div>
+                        </div>
+
+                        <div class="event">
+                            <span class="point"><i class="fa fa-laptop"></i></span>
+                            <div class="description">
+                                <p class="hour">14:00 - 18:00</p>
+                                <p class="title">Oficina de Node JS - R$30,00</p>
+                            </div>
+                        </div>
+
+                        <div class="event">
+                            <span class="point"><i class="fa fa-laptop"></i></span>
+                            <div class="description">
+                                <p class="hour">14:00 - 18:00</p>
+                                <p class="title">Oficina de Angular JS - R$30,00</p>
+                            </div>
+                        </div>
+
+                        <div class="event">
+                            <span class="point"><i class="fa fa-user"></i></span>
+                            <div class="description">
+                                <p class="hour">19:30</p>
+                                <p class="title">Palestra: Giovanni Comunello Jr.</p>
+                            </div>
+                        </div>
+
+                        <div class="event">
+                            <span class="point"><i class="fa fa-user"></i></span>
+                            <div class="description">
+                                <p class="hour">20:30</p>
+                                <p class="title">Palestra: Evelym Mendes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="line-event">
+                        <div class="day">Dia 18 - Quarta-Feira</div>
+
+                        <div class="event no-hour">
+                            <span class="point"><i class="fa fa-map"></i></span>
+                            <div class="description">
+                                <p class="title">Apresentação de banners de projetos de desenvolvimento de software</p>
+                            </div>
+                        </div>
+
+                        <div class="event">
+                            <span class="point"><i class="fa fa-laptop"></i></span>
+                            <div class="description">
+                                <p class="hour">14:00 - 18:00</p>
+                                <p class="title">Oficina de IOT - R$50,00</p>
+                            </div>
+                        </div>
+
+                        <div class="event">
+                            <span class="point"><i class="fa fa-dot-circle-o"></i></span>
+                            <div class="description">
+                                <p class="hour">Apartir das 19:00</p>
+                                <p class="title">Final do Camp. CS GO</p>
+                            </div>
+                        </div>
+
+                        <div class="event">
+                            <span class="point"><i class="fa fa-map"></i></span>
+                            <div class="description">
+                                <p class="hour">19:00 - 20:00</p>
+                                <p class="title">Apresentação de projetos de desenvolvimento de software</p>
+                            </div>
+                        </div>
+
+                        <div class="event">
+                            <span class="point"><i class="fa fa-cutlery"></i></span>
+                            <div class="description">
+                                <p class="hour">Apartir das 20:00</p>
+                                <p class="title">Carreteiro de encerramento</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="logos">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <div class="brand">Semana Acadêmica</div>
+                    </div>
+                    <div class="col-6 text-right">
+                        <a href="http://www.ulbra.br/torres"><img src="assets/img/logo_computacao_ulbra.png" alt="Computação Ulbra Torres"></a>
+                        <a href="https://www.facebook.com/computacao.torres/"><img src="assets/img/logo_ulbra.png" alt="Ulbra Torres"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!-- Jquery -->
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<!-- Moment JS -->
+<script src="assets/js/moment.min.js"></script>
+<!-- Tether.io -->
+<script src="assets/js/tether.js"></script>
+<!-- bootstrap-4 -->
+<script src="assets/bootstrap-4.0.0-beta-dist/js/bootstrap.min.js"></script>
+<!-- Main jS -->
+<script src="assets/js/main.js"></script>
+
+</html>
